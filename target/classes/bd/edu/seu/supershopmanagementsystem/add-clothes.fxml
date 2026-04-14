@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.supershopmanagementsystem.Shop.AddClothesController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8c71fc" height="700.0" stroke="BLACK" strokeType="INSIDE" width="295.0" />
+      <Label layoutX="464.0" layoutY="43.0" text="ADD CLOTHES" textFill="#ff16fb" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="typeBox" layoutX="523.0" layoutY="101.0" prefHeight="31.0" prefWidth="173.0" />
+      <Label layoutX="358.0" layoutY="105.0" text="Dress Type :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="358.0" layoutY="157.0" text="Dress Name :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameField" layoutX="524.0" layoutY="152.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="priceField" layoutX="524.0" layoutY="261.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="profitFiled" layoutX="525.0" layoutY="314.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Spinner fx:id="quantityField" layoutX="525.0" layoutY="373.0" prefHeight="31.0" prefWidth="173.0" />
+      <Label layoutX="358.0" layoutY="210.0" text="Dress Size :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="357.0" layoutY="264.0" text="Sell Price">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="357.0" layoutY="317.0" text="Dress Profit Price :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="357.0" layoutY="376.0" text="Add Quantity">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="343.0" layoutY="521.0" mnemonicParsing="false" onAction="#uploadPhoto" text="Upload Dress Photo" />
+      <ImageView fx:id="addImage" fitHeight="142.0" fitWidth="173.0" layoutX="530.0" layoutY="474.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="531.0" layoutY="635.0" mnemonicParsing="false" onAction="#save" text="Save">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <RadioButton layoutX="525.0" layoutY="434.0" mnemonicParsing="false" text="Male">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="genderToggleGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="617.0" layoutY="434.0" mnemonicParsing="false" text="Female" toggleGroup="$genderToggleGroup">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <ChoiceBox fx:id="sizeBox" layoutX="523.0" layoutY="208.0" prefHeight="31.0" prefWidth="173.0" />
+      <Label fx:id="saveInfo" layoutX="479.0" layoutY="673.0" prefHeight="17.0" prefWidth="152.0" />
+   </children>
+</AnchorPane>

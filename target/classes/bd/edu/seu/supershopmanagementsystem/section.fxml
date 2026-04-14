@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.supershopmanagementsystem.Shop.AddSectionController">
+   <children>
+      <Label layoutX="358.0" layoutY="39.0" text="Section">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Pane layoutX="7.0" layoutY="153.0" onMouseClicked="#goToAddGood" prefHeight="71.0" prefWidth="378.0" style="-fx-background-color: #F36161;">
+         <children>
+            <Label layoutX="29.0" layoutY="21.0" prefHeight="25.0" prefWidth="200.0" text="ADD GROCERIES" textFill="#daff08">
+               <font>
+                  <Font name="AdobeHeitiStd-Regular" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="7.0" layoutY="224.0" onMouseClicked="#goToAddCloth" prefHeight="71.0" prefWidth="378.0" style="-fx-background-color: #61B0F3;">
+         <children>
+            <Label layoutX="29.0" layoutY="20.0" prefHeight="25.0" prefWidth="174.0" text="ADD CLOTHES" textFill="#daff08">
+               <font>
+                  <Font name="AdobeHeitiStd-Regular" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="7.0" layoutY="295.0" onMouseClicked="#goToAddStationary" prefHeight="71.0" prefWidth="378.0" style="-fx-background-color: #61F373;">
+         <children>
+            <Label layoutX="38.0" layoutY="18.0" prefHeight="25.0" prefWidth="254.0" text="ADD STATIONARIES" textFill="#343917">
+               <font>
+                  <Font name="AdobeHeitiStd-Regular" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

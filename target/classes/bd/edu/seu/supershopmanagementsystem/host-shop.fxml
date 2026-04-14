@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.supershopmanagementsystem.Shop.HostShopController">
+   <children>
+      <TableView fx:id="goodTable" layoutX="173.0" layoutY="131.0" prefHeight="247.0" prefWidth="420.0">
+         <columns>
+            <TableColumn fx:id="typeColumn" prefWidth="88.0" text="Type" />
+            <TableColumn fx:id="nameColumn" prefWidth="115.0" text="Product Name" />
+            <TableColumn fx:id="quantityColumn" prefWidth="57.0" text="Quantity" />
+            <TableColumn fx:id="priceColumn" prefWidth="61.0" text="Price" />
+            <TableColumn fx:id="dateColumn" prefWidth="113.0" text="Expire Date" />
+         </columns>
+      </TableView>
+      <Label layoutX="321.0" layoutY="92.0" text="Grocery Section" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

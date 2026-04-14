@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.supershopmanagementsystem.owner.OwnerLoginController">
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="383.0" style="-fx-background-color: #8C71FC;">
+         <children>
+            <Label alignment="CENTER" layoutX="85.0" layoutY="235.0" prefHeight="74.0" prefWidth="213.0" text="Welcome" textFill="#f8ffc4">
+               <font>
+                  <Font name="HoboStd" size="34.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="85.0" layoutY="333.0" prefHeight="82.0" prefWidth="213.0" text="Owner Login PAGE" textFill="#f8ffc4">
+               <font>
+                  <Font name="HoboStd" size="23.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="85.0" layoutY="285.0" prefHeight="74.0" prefWidth="213.0" text="To" textFill="#f8ffc4">
+               <font>
+                  <Font name="HoboStd" size="34.0" />
+               </font>
+            </Label>
+            <Label layoutX="79.0" layoutY="623.0" text="NEW OWNER ??" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="216.0" layoutY="627.0" onMouseClicked="#goToRegistration" text="Register Here." textFill="#74ff90">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <PasswordField fx:id="passwordField" layoutX="497.0" layoutY="364.0" onAction="#login">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="nameField" layoutX="497.0" layoutY="247.0" onAction="#login">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="497.0" layoutY="220.0" text="Onwer Name:" textFill="RED">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="497.0" layoutY="336.0" text="Onwer Password:" textFill="RED">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="562.0" layoutY="431.0" mnemonicParsing="false" onAction="#login" text="Login">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="emptyName" layoutX="499.0" layoutY="282.0" prefHeight="17.0" prefWidth="161.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="emptyPassword" layoutX="498.0" layoutY="399.0" prefHeight="17.0" prefWidth="161.0" textFill="RED" />
+      <Label layoutX="723.0" layoutY="31.0" onMouseClicked="#backToFirstScene" text="&lt;&lt;Back" textFill="BLUE" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

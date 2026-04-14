@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.supershopmanagementsystem.Shop.AddProductController">
+   <children>
+      <Label layoutX="452.0" layoutY="31.0" text="ADD Good's" textFill="#ff16fb" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="productChoiceBox" layoutX="542.0" layoutY="87.0" prefHeight="31.0" prefWidth="187.0" />
+      <Label layoutX="328.0" layoutY="81.0" text="product Type">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameField" layoutX="542.0" layoutY="142.0" prefHeight="31.0" prefWidth="187.0" />
+      <Label layoutX="322.0" layoutY="147.0" text="Product Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="priceField" layoutX="542.0" layoutY="200.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="324.0" layoutY="205.0" text="Price">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dateField" layoutX="541.0" layoutY="380.0" prefHeight="31.0" prefWidth="187.0" />
+      <Label layoutX="320.0" layoutY="385.0" text="Product Expire Date">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="quantityField" layoutX="541.0" layoutY="313.0" prefHeight="31.0" prefWidth="187.0" />
+      <Label layoutX="320.0" layoutY="318.0" text="Quantity">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="322.0" layoutY="101.0" text=" ( chips,cake,biscuit,bevarage )">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="513.0" layoutY="636.0" mnemonicParsing="false" onAction="#save" text="Save">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="682.0" layoutY="14.0" onMouseClicked="#goToHome" text="&lt;&lt;Back To Home" textFill="#002dff" underline="true" />
+      <Label layoutX="324.0" layoutY="260.0" text="Profit Ammount">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="profitField" layoutX="542.0" layoutY="255.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button layoutX="332.0" layoutY="493.0" mnemonicParsing="false" onAction="#uploadPhoto" text="Upload Product Photo" />
+      <ImageView fx:id="imageView" fitHeight="158.0" fitWidth="187.0" layoutX="540.0" layoutY="439.0" pickOnBounds="true" preserveRatio="true" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8c71fc" height="700.0" stroke="BLACK" strokeType="INSIDE" width="295.0" />
+   </children>
+</AnchorPane>

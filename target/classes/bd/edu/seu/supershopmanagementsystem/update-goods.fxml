@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.supershopmanagementsystem.Shop.UpdateGoodsController">
+   <children>
+      <TableView fx:id="goodTable" layoutX="21.0" layoutY="103.0" onMouseClicked="#onTableClicked" prefHeight="247.0" prefWidth="435.0">
+         <columns>
+            <TableColumn fx:id="typeColumn" prefWidth="88.0" text="Type" />
+            <TableColumn fx:id="nameColumn" prefWidth="115.0" text="Product Name" />
+            <TableColumn fx:id="quantityColumn" prefWidth="57.0" text="Quantity" />
+            <TableColumn fx:id="priceColumn" prefWidth="61.0" text="Price" />
+            <TableColumn fx:id="dateColumn" prefWidth="113.0" text="Expire Date" />
+         </columns>
+      </TableView>
+      <Label layoutX="190.0" layoutY="27.0" text="Grocery Section" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchField" layoutX="21.0" layoutY="72.0" onKeyTyped="#searching" prefHeight="25.0" prefWidth="190.0" promptText="Search by name" />
+      <ChoiceBox fx:id="choiceField" layoutX="306.0" layoutY="72.0" onInputMethodTextChanged="#choiceBoxSelected" prefWidth="150.0" />
+      <Label layoutX="197.0" layoutY="393.0" text="Product Details">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="480.0" layoutY="3.0" orientation="VERTICAL" prefHeight="693.0" prefWidth="26.0" />
+      <Label layoutX="33.0" layoutY="418.0" prefHeight="21.0" prefWidth="84.0" text="Product Type">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="449.0" prefHeight="21.0" prefWidth="84.0" text="Product Name">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="481.0" prefHeight="21.0" prefWidth="84.0" text="Sell Price">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="511.0" prefHeight="21.0" prefWidth="84.0" text="Profit Price">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="544.0" prefHeight="21.0" prefWidth="84.0" text=" Quantiy">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="579.0" prefHeight="21.0" prefWidth="84.0" text="Expire Date">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="typeLabel" layoutX="136.0" layoutY="420.0" prefHeight="17.0" prefWidth="135.0" />
+      <Label fx:id="nameLabel" layoutX="136.0" layoutY="451.0" prefHeight="17.0" prefWidth="135.0" />
+      <Label fx:id="priceLabel" layoutX="136.0" layoutY="483.0" prefHeight="17.0" prefWidth="135.0" />
+      <Label fx:id="dateLabel" layoutX="136.0" layoutY="581.0" prefHeight="17.0" prefWidth="135.0" />
+      <Label fx:id="profitLabel" layoutX="136.0" layoutY="513.0" prefHeight="17.0" prefWidth="135.0" />
+      <Label fx:id="quantityLabel" layoutX="136.0" layoutY="546.0" prefHeight="17.0" prefWidth="135.0" />
+      <ImageView fx:id="showImage" fitHeight="150.0" fitWidth="159.0" layoutX="302.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="nameField" layoutX="574.0" layoutY="169.0" />
+      <TextField fx:id="priceField" layoutX="574.0" layoutY="226.0" />
+      <TextField fx:id="quantityField" layoutX="574.0" layoutY="284.0" />
+      <Label layoutX="633.0" layoutY="146.0" text="Name" />
+      <Label layoutX="635.0" layoutY="206.0" text="Price" />
+      <Label layoutX="626.0" layoutY="264.0" text="Quantity" />
+      <Button layoutX="672.0" layoutY="501.0" mnemonicParsing="false" onAction="#update" text="Update" />
+      <TextField fx:id="typeField" layoutX="572.0" layoutY="110.0" />
+      <Label layoutX="633.0" layoutY="89.0" text="Type" />
+      <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" layoutX="551.0" layoutY="335.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="574.0" layoutY="499.0" mnemonicParsing="false" onAction="#newImage" text="Set Image" />
+      <Button layoutX="226.0" layoutY="358.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
+      <Button layoutX="722.0" layoutY="650.0" mnemonicParsing="false" onMouseClicked="#backToFirstScene" text="Log Out" />
+   </children>
+</AnchorPane>

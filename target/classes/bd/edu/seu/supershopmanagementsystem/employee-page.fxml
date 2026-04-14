@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.supershopmanagementsystem.Employee.EmployeePageController">
+   <children>
+      <Button layoutX="654.0" layoutY="645.0" mnemonicParsing="false" onAction="#back" text="Back">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="135.0" layoutY="204.0" text="Employee Name: " />
+      <Label fx:id="nameLabel" layoutX="237.0" layoutY="204.0" prefHeight="17.0" prefWidth="159.0" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="135.0" layoutY="233.0" text="Employee NID: " />
+      <Label fx:id="nidLabel" layoutX="237.0" layoutY="233.0" prefHeight="17.0" prefWidth="159.0" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="135.0" layoutY="264.0" text="Employee Number:" />
+      <Label fx:id="numberLabel" layoutX="245.0" layoutY="264.0" prefHeight="17.0" prefWidth="159.0" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="135.0" layoutY="295.0" text="Employee Salary Amount:" />
+      <Label fx:id="salaryLabel" layoutX="286.0" layoutY="296.0" prefHeight="17.0" prefWidth="159.0" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Pane layoutX="290.0" layoutY="426.0" onMouseClicked="#goToAddProduct" prefHeight="250.0" prefWidth="241.0" style="-fx-background-color: #CC8DEB;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="46.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ADD%20product%20Image.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="63.0" layoutY="203.0" text="ADD Product's" textFill="#1150d7">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="542.0" layoutY="381.0" onMouseClicked="#goToShop" prefHeight="250.0" prefWidth="241.0" style="-fx-background-color: #000000;">
+         <children>
+            <Label layoutX="52.0" layoutY="189.0" text="Update Groceries" textFill="#d900ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="21.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Grocery-PNG-Photo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="159.0" layoutX="217.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" />
+      <Pane layoutX="542.0" layoutY="106.0" onMouseClicked="#updateClothes" prefHeight="250.0" prefWidth="241.0" style="-fx-background-color: #FBE739;">
+         <children>
+            <Label layoutX="63.0" layoutY="203.0" prefHeight="27.0" prefWidth="128.0" text="Update clothes" textFill="#0400ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="46.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Add%20Clothes.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="29.0" layoutY="426.0" onMouseClicked="#updateStationary" prefHeight="250.0" prefWidth="241.0" style="-fx-background-color: #27FFC1;">
+         <children>
+            <Label layoutX="47.0" layoutY="200.0" prefHeight="27.0" prefWidth="147.0" text="Update stationary">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="33.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Untitled-1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

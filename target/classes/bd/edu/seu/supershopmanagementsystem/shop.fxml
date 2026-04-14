@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: #CFF1E7;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.supershopmanagementsystem.Shop.ShopController">
+   <children>
+      <Label layoutX="276.0" layoutY="38.0" text="Welcome To_____ Shop" textFill="RED">
+         <font>
+            <Font name="Segoe UI Black Italic" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="683.0" layoutY="21.0" onMouseClicked="#goBackToHome" text="&lt;&lt;Back To Home" textFill="#0845ff" underline="true" />
+      <Pane layoutX="52.0" layoutY="227.0" onMouseClicked="#goToClothes" prefHeight="213.0" prefWidth="213.0" style="-fx-background-color: #FBE739;">
+         <children>
+            <Label layoutX="39.0" layoutY="165.0" text="Clothes Section">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="133.0" fitWidth="139.0" layoutX="39.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Add%20Clothes.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="296.0" layoutY="227.0" onMouseClicked="#goToGrocery" prefHeight="213.0" prefWidth="213.0" style="-fx-background-color: #000000;">
+         <children>
+            <ImageView fitHeight="127.0" fitWidth="146.0" layoutX="34.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Grocery-PNG-Photo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="37.0" layoutY="161.0" text="Grocery Section" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="535.0" layoutY="227.0" onMouseClicked="#goToStationary" prefHeight="213.0" prefWidth="213.0" style="-fx-background-color: #27FFC1;">
+         <children>
+            <Label layoutX="25.0" layoutY="164.0" text="Stationary Section">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="133.0" fitWidth="146.0" layoutX="34.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Untitled-1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
