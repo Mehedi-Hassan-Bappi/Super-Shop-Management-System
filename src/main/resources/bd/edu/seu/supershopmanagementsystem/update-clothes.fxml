@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.supershopmanagementsystem.Shop.UpdateClothesController">
+   <children>
+      <TableView fx:id="clotheTable" layoutX="39.0" layoutY="90.0" onMouseClicked="#onTableClicked" prefHeight="280.0" prefWidth="377.0">
+         <columns>
+            <TableColumn fx:id="typeColumn" prefWidth="75.0" text="Type" />
+            <TableColumn fx:id="nameColumn" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="sizeColumn" prefWidth="75.0" text="Size" />
+            <TableColumn fx:id="quantityColumn" prefWidth="75.0" text="Quantity" />
+            <TableColumn fx:id="priceColumn" prefWidth="75.0" text="Price" />
+         </columns>
+      </TableView>
+      <Label layoutX="207.0" layoutY="14.0" text="clothes">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+      <TextField fx:id="typeField" layoutX="526.0" layoutY="107.0" />
+      <TextField fx:id="nameField" layoutX="526.0" layoutY="167.0" />
+      <Separator layoutX="432.0" layoutY="44.0" orientation="VERTICAL" prefHeight="646.0" prefWidth="38.0" />
+      <TextField fx:id="sizeField" layoutX="526.0" layoutY="223.0" />
+      <TextField fx:id="quantityField" layoutX="526.0" layoutY="275.0" />
+      <TextField fx:id="priceField" layoutX="526.0" layoutY="326.0" />
+      <Button layoutX="617.0" layoutY="538.0" mnemonicParsing="false" onAction="#update" text="Update" />
+      <Button layoutX="207.0" layoutY="383.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
+      <Label layoutX="586.0" layoutY="84.0" text="Type" />
+      <Label layoutX="585.0" layoutY="144.0" text="Name" />
+      <Label layoutX="590.0" layoutY="201.0" text="Size" />
+      <Label layoutX="576.0" layoutY="254.0" text="Quantity" />
+      <Label layoutX="586.0" layoutY="307.0" text="Price" />
+      <ChoiceBox fx:id="typeChoiceBox" layoutX="39.0" layoutY="59.0" onInputMethodTextChanged="#selectedChoiceBox" prefWidth="150.0" />
+      <Label layoutX="39.0" layoutY="470.0" text="Type" />
+      <Label layoutX="39.0" layoutY="497.0" text="Name" />
+      <Label layoutX="39.0" layoutY="524.0" text="Size" />
+      <Label layoutX="40.0" layoutY="587.0" text="Profit Price" />
+      <Label layoutX="40.0" layoutY="556.0" text="Price" />
+      <Label fx:id="typeLabel" layoutX="108.0" layoutY="470.0" prefHeight="17.0" prefWidth="150.0" />
+      <Label fx:id="nameLabel" layoutX="108.0" layoutY="497.0" prefHeight="17.0" prefWidth="150.0" />
+      <Label fx:id="sizeLabel" layoutX="108.0" layoutY="524.0" prefHeight="17.0" prefWidth="150.0" />
+      <Label fx:id="priceLabel" layoutX="108.0" layoutY="556.0" prefHeight="17.0" prefWidth="150.0" />
+      <Label fx:id="profitLabel" layoutX="108.0" layoutY="588.0" prefHeight="17.0" prefWidth="150.0" />
+      <Label layoutX="41.0" layoutY="613.0" text="Quantity" />
+      <Label fx:id="quantityLabel" layoutX="109.0" layoutY="614.0" prefHeight="17.0" prefWidth="150.0" />
+      <ImageView fx:id="showImage" fitHeight="150.0" fitWidth="182.0" layoutX="257.0" layoutY="470.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="updateImage" fitHeight="150.0" fitWidth="200.0" layoutX="501.0" layoutY="368.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="524.0" layoutY="538.0" mnemonicParsing="false" onAction="#uploadPhoto" text="Upload" />
+      <Button layoutX="723.0" layoutY="654.0" mnemonicParsing="false" onAction="#backToFirstScene" text="Log Out" />
+   </children>
+</AnchorPane>

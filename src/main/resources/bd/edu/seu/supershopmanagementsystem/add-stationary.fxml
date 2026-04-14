@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.supershopmanagementsystem.Shop.AddStationaryController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8c71fc" height="700.0" stroke="BLACK" strokeType="INSIDE" width="295.0" />
+      <Label layoutX="449.0" layoutY="53.0" text="ADD STATIONARIES" textFill="#ff16fb" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="typeBox" layoutX="533.0" layoutY="111.0" prefHeight="31.0" prefWidth="173.0" />
+      <Label layoutX="368.0" layoutY="115.0" text="Stationary Type: ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="368.0" layoutY="181.0" text="Stationary Name: ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameField" layoutX="533.0" layoutY="179.0" prefHeight="31.0" prefWidth="173.0" />
+      <TextField fx:id="priceFiled" layoutX="533.0" layoutY="246.0" prefHeight="31.0" prefWidth="173.0" />
+      <TextField fx:id="profitField" layoutX="533.0" layoutY="310.0" prefHeight="31.0" prefWidth="173.0" />
+      <Label layoutX="368.0" layoutY="251.0" text="Sell price">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="368.0" layoutY="315.0" text="Profit Price ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="quantityField" layoutX="535.0" layoutY="383.0" prefHeight="31.0" prefWidth="173.0" />
+      <Label layoutX="367.0" layoutY="386.0" text="Add Quantity">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="349.0" layoutY="477.0" mnemonicParsing="false" onAction="#uploadPhoto" text="Upload Dress Photo" />
+      <ImageView fx:id="imageView" fitHeight="142.0" fitWidth="173.0" layoutX="536.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="511.0" layoutY="587.0" mnemonicParsing="false" onAction="#save" text="Save">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="saveInfo" layoutX="471.0" layoutY="640.0" prefHeight="17.0" prefWidth="167.0" />
+   </children>
+</AnchorPane>
